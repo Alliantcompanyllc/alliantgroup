@@ -407,25 +407,25 @@
         </div>
         <!-- Banner End -->
         <section class="vacancy">
-          <div class="form__vacancy">
-            <p>Electrical & Instrumentation Engineer</p>
-            <p>Senior Planning Engineer SWO</p>
-            <p>Lead Commissioning Piping / Mechanical / Process Engineer</p>
-            <p>Heavy Equipment Engineer</p>
-            <p>Senior Mechanical Engineer</p>
-            <p>Field Sales Engineer - Automation</p>
-            <p>Entry Level Web Developer</p>
-            <p>Engineer, HEMM Maintenance</p>
-            <p>Mechanical Technician (Line 5 Cement Industry)</p>
-            <p>Lifting Supervisor</p>
-            <p>Quality Assurance And Quality Control</p>
+          <ul class="form__vacancy">
+            <li>Electrical & Instrumentation Engineer</li>
+            <li>Senior Planning Engineer SWO</li>
+            <li>Lead Commissioning Piping / Mechanical / Process Engineer</li>
+            <li>Heavy Equipment Engineer</li>
+            <li>Senior Mechanical Engineer</li>
+            <li>Field Sales Engineer - Automation</li>
+            <li>Entry Level Web Developer</li>
+            <li>Engineer, HEMM Maintenance</li>
+            <li>Mechanical Technician (Line 5 Cement Industry)</li>
+            <li>Lifting Supervisor</li>
+            <li>Quality Assurance And Quality Control</li>
             <button>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSd5iRffcnqtDb6lRs-UFvqTr1rRch-W2VqsmrMXTHajtao8oA/viewform?pli=1"
                 >Apply</a
               >
             </button>
-          </div>
+          </ul>
           <div class="job__description">
             <p>Full–time</p>
             <p>Location: MA, USA</p>
@@ -461,6 +461,12 @@
           font-size: 21px;
         }
 
+        .form__vacancy li {
+          list-style-type: disc;
+          padding: 0 1rem 0 0;
+          width: 100%;
+        }
+
         button {
           width: 7rem;
           height: 2rem;
@@ -479,6 +485,29 @@
 
         .deadline p:last-child {
           color: red;
+        }
+
+        @media screen and (max-width: 1024px) {
+          .vacancy {
+            padding: 1rem;
+          }
+
+          .form__vacancy {
+            width: 20rem;
+          }
+
+          .job__description {
+            width: 13rem;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          .vacancy {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 2rem;
+            gap: 2rem;
+          }
         }
       </style>
 
